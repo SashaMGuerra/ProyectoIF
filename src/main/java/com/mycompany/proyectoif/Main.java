@@ -17,21 +17,31 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int n;
+        int n, contador;
         
         System.out.println("Introduzca número: ");
         Scanner scanner=new Scanner(System.in);
         n=scanner.nextInt();
         
-        if (n>0) {
+        while(n==0){
+            System.out.println("El número es nulo");
+            System.out.println("Introduzca número: ");
+            scanner=new Scanner(System.in);
+            n=scanner.nextInt();
+        }
+        
+        contador=1;
+        if (n>0){
             System.out.println("El número es positivo");
+            do{
+                System.out.println(n+"*"+contador+"= "+(n*contador));
+                contador++;
+            }while(contador<=10);
         }
-        else if(n<0){
+        else{
             System.out.println("El número es negativo");
-        }
-            else{
-                System.out.println("El número es nulo");
-            }
+        }   
+            
     }
     
         
