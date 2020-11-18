@@ -8,7 +8,7 @@ package com.mycompany.proyectoif;
 import java.util.Scanner;
 
 /**
- * Este programa solicita un número al usuario y muestra por pantalla si es positivo, negativo o nulo. Si es positivo, muestra la tabla de multiplicar.
+ * Este programa solicita un número al usuario y muestra por pantalla si es positivo o negativo. Si es nulo, pide otro número; si es positivo, muestra la tabla de multiplicar.
  * @author Sasha
  */
 public class Main {
